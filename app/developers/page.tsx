@@ -7,31 +7,31 @@ import { Github, Linkedin, Mail, Code, Heart, Users, Lightbulb } from "lucide-re
 export default function DevelopersPage() {
   const developers = [
     {
-      name: "Alex Rodriguez",
-      role: "Lead Developer & Project Manager",
-      bio: "Passionate about sustainable technology and educational platforms. Specializes in full-stack development with a focus on environmental impact.",
-      skills: ["React", "Node.js", "Sustainability Tech", "Project Management"],
-      avatar: "/professional-developer-portrait.png",
+      name: "Otavio Emanoel de Lima",
+      role: "Developer & Project Manager",
+      bio: "Full-stack developer with a passion for coding and technology. Experienced in building scalable web applications and leading development teams.",
+      skills: ["NextJS", "Node.js", "Flutter", "TypeScript", "Java", "Linux", "Git"],
+      avatar: "/otavio.jpeg",
       social: {
-        github: "#",
-        linkedin: "#",
-        email: "alex@wizardnews.com",
+        github: "https://github.com/Otavio-Emanoel",
+        linkedin: "https://www.linkedin.com/in/otavio-emanoel-de-lima-1a694336a/",
+        email: "otavioemanoel8a@gmail.com",
       },
     },
     {
-      name: "Maria Santos",
-      role: "UI/UX Designer & Frontend Developer",
+      name: "Nicolas de Oliveira Compioni",
+      role: "UI/UX Designer",
       bio: "Environmental advocate with expertise in creating intuitive, accessible designs that promote sustainability awareness and education.",
-      skills: ["UI/UX Design", "React", "Accessibility", "Environmental Design"],
-      avatar: "/female-designer-portrait.png",
+      skills: ["UI/UX Design", "Accessibility", "Environmental Design"],
+      avatar: "/nicolas1.jpeg",
       social: {
         github: "#",
         linkedin: "#",
-        email: "maria@wizardnews.com",
+        email: "nicolas@wizardnews.com",
       },
     },
     {
-      name: "Carlos Mendoza",
+      name: "Nicolas Leon",
       role: "Content Strategist & Research Specialist",
       bio: "Education researcher focused on sustainable school practices. Brings deep knowledge of environmental education and policy development.",
       skills: ["Content Strategy", "Educational Research", "Sustainability Policy", "Data Analysis"],
@@ -39,7 +39,19 @@ export default function DevelopersPage() {
       social: {
         github: "#",
         linkedin: "#",
-        email: "carlos@wizardnews.com",
+        email: "nicolasleon@wizardnews.com",
+      },
+    },
+    {
+      name: "Emanuel J. Nardes",
+      role: "Frontend Developer",
+      bio: "Frontend developer with a knack for creating engaging user experiences. Passionate about using technology to drive social change.",
+      skills: ["HTML", "CSS", "JavaScript", "React", "Vue.js"],
+      avatar: "/lucas.jpeg",
+      social: {
+        github: "#",
+        linkedin: "#",
+        email: "lucas@wizardnews.com",
       },
     },
   ]
@@ -222,7 +234,7 @@ export default function DevelopersPage() {
                       <Mail className="mr-2 h-4 w-4" />
                       Contact Us
                     </Button>
-                    <Button variant="outline">
+                    <Button variant="outline" >
                       <Github className="mr-2 h-4 w-4" />
                       View Source Code
                     </Button>

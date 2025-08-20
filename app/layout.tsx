@@ -27,7 +27,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${dmSans.variable} antialiased`}>
+      <html lang="pt-br">
+        <head>
+          <link rel="icon" href="/images/wizard-logo.png" type="image/png" sizes="32x32" />
+        </head>
       <body>{children}</body>
     </html>
   )
