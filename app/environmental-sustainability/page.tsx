@@ -290,6 +290,32 @@ export default function EnvironmentalSustainabilityPage() {
               </CardContent>
             </Card>
 
+            {/* Responsible Team Section */}
+            <section className="py-12">
+              <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <Card className="p-6">
+                  <CardContent className="pt-0">
+                    <div className="flex items-center gap-3 mb-4">
+                      <Users className="h-5 w-5 text-accent" />
+                      <h2 className="font-heading font-bold text-2xl">Responsible for this topic</h2>
+                    </div>
+                    <div className="flex flex-wrap gap-3">
+                      {[
+                        "Maria Clara Oliveira",
+                        "Guilherme Machado",
+                        "Allan Nascimento",
+                        "Giovana Kumbrevivius",
+                      ].map((name) => (
+                        <Badge key={name} variant="secondary" className="text-sm py-1.5 px-3">
+                          {name}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </section>
+
             {/* Conclusion CTA */}
             <div className="mt-16 text-center">
               <h3 className="font-heading font-bold text-2xl mb-4">Ready to Make a Difference?</h3>

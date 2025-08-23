@@ -22,15 +22,17 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3">
+          <Link href="/" className="group flex items-center space-x-3 transition-transform duration-300 transform-gpu hover:scale-[1.02]">
             <Image
               src="/images/wizard-logo.png"
               alt="Wizard News Logo"
               width={40}
               height={40}
-              className="rounded-full"
+              className="rounded-full ring-0 transition-all duration-300 group-hover:ring-2 group-hover:ring-primary/30 group-hover:shadow-md"
             />
-            <span className="font-heading font-bold text-xl text-primary">Wizard News</span>
+            <span className="font-heading font-bold text-xl text-primary/90 transition-colors duration-300 group-hover:text-primary">
+              Wizard News
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -39,9 +41,11 @@ export function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                className="group relative inline-flex items-center py-2 text-foreground/85 transition-colors duration-200 hover:text-foreground"
               >
-                {item.label}
+                <span className="font-medium">{item.label}</span>
+                {/* Animated underline */}
+                <span className="pointer-events-none absolute -bottom-0.5 left-1/2 h-0.5 w-0 -translate-x-1/2 rounded-full bg-gradient-to-r from-primary/0 via-primary to-primary/0 transition-all duration-300 group-hover:w-4/5" />
               </Link>
             ))}
           </div>
@@ -62,10 +66,11 @@ export function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="block px-3 py-2 text-card-foreground hover:text-primary transition-colors duration-200"
+                  className="group relative block px-3 py-2 rounded-md text-card-foreground/90 hover:text-card-foreground transition-colors duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {item.label}
+                  <span className="font-medium">{item.label}</span>
+                  <span className="pointer-events-none absolute -bottom-0.5 left-3 right-3 h-0.5 w-0 rounded-full bg-gradient-to-r from-primary/0 via-primary to-primary/0 transition-all duration-300 group-hover:w-[90%]" />
                 </Link>
               ))}
             </div>
