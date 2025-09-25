@@ -3,6 +3,9 @@ import type { Metadata } from "next"
 import { Space_Grotesk, DM_Sans } from "next/font/google"
 import "./globals.css"
 
+// Wrapper cliente para VLibras (pacote vlibras-nextjs) para todas as páginas
+import VLibrasWrapper from "./vlibras-wrapper"
+
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   display: "swap",
@@ -31,7 +34,10 @@ export default function RootLayout({
         <head>
           <link rel="icon" href="/images/wizard-logo.png" type="image/png" sizes="32x32" />
         </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <VLibrasWrapper />
+      </body>
     </html>
   )
 }
